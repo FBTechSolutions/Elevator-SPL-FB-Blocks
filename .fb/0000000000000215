@@ -1,0 +1,15 @@
+//nsF0005
+			"1 MOVING_UP",
+			"1 FLOORING",
+			"2 MOVING_UP",
+			"2 FLOORING",
+			"3 MOVING_UP",
+			"3 FLOORING",
+			"2 MOVING_DOWN",
+			"2 FLOORING",
+			"1 MOVING_DOWN",
+			"1 FLOORING",
+			"0 MOVING_DOWN",
+			"0 FLOORING",
+			"1 MOVING_UP",
+			"1 FLOORING"

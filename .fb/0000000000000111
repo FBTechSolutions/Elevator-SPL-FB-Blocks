@@ -1,0 +1,5 @@
+	private static MainWindow simulationWindow;
+	private ControlUnit controller;
+	
+	public static void main(String[] args) {
+		SimulationUnit sim = new SimulationUnit();

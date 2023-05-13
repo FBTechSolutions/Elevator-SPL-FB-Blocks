@@ -1,0 +1,8 @@
+//nsF0011
+		if (simulation.getCurrentFloor() != level) {
+			simulation.floorRequest(new Request(level));
+			btnFloorRequest.setEnabled(false);
+			btnFloorRequest.setSelected(true);
+		} else {
+			if (btnFloorRequest != null) btnFloorRequest.setSelected(false);
+		}

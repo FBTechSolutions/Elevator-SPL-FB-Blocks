@@ -1,0 +1,7 @@
+											{
+	
+	public static int TIME_DELAY = 700;
+	public boolean run = true;
+
+	private Elevator elevator;
+	

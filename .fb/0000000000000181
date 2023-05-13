@@ -1,0 +1,20 @@
+	 }
+
+	private void addBuilding(int maxFloors) {
+		JPanel panel_building = new JPanel();
+		GridBagLayout layout = new GridBagLayout();
+		panel_building.setLayout(layout);
+		
+		JScrollPane scrollPane = new JScrollPane(panel_building);
+		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPane.getVerticalScrollBar().setUnitIncrement(10);
+		
+		GridBagConstraints gbc = new GridBagConstraints();
+		gbc.insets = new Insets(0, 0, 0, 0);
+		gbc.fill = GridBagConstraints.BOTH;
+		gbc.gridx = 2;
+		gbc.gridy = 0;
+		gbc.anchor = GridBagConstraints.SOUTH;
+
+		for (int i = maxFloors; i >= 0; i--) {

@@ -1,0 +1,4 @@
+//nsF0009
+			if (disabledFloors.contains(i)) {
+				continue;
+			}

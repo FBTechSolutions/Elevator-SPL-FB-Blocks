@@ -1,0 +1,40 @@
+//nsF0024
+	public static class DownComparator extends RequestComparator {
+		
+		public DownComparator(ControlUnit controller) {
+			super(controller);
+		}
+		
+		@Override
+		public int compareDirectional(Request o1, Request o2) {
+			if (o1.getDirection() == ElevatorState.MOVING_UP   && o2.getDirection() != ElevatorState.MOVING_UP) return  1;
+			if (o1.getDirection() == ElevatorState.MOVING_DOWN && o2.getDirection() == ElevatorState.MOVING_UP)	return -1;
+			if (o1.getDirection() == ElevatorState.FLOORING    && o2.getDirection() == ElevatorState.MOVING_UP
+					&& o1.getFloor() + o2.getFloor() - 2*controller.getCurrentFloor() < 0)	return -1;
+			final int diffO1 = o1.getFloor() - controller.getCurrentFloor();
+			final int diffO2 = o2.getFloor() - controller.getCurrentFloor();
+			if (diffO1 <= 0 && diffO2 <= 0) return o2.getFloor() - o1.getFloor();
+			if (diffO1 >  0 && diffO2 >  0) return o1.getFloor() - o2.getFloor();
+			return (diffO1 <= 0) ? -1 : 1;
+		}
+	}
+	
+	public static class UpComparator extends RequestComparator {
+		
+		public UpComparator(ControlUnit controller) {
+			super(controller);
+		}
+		
+		@Override
+		public int compareDirectional(Request o1, Request o2) {
+			if (o1.getDirection() == ElevatorState.MOVING_DOWN && o2.getDirection() != ElevatorState.MOVING_DOWN) return  1;
+			if (o1.getDirection() == ElevatorState.MOVING_UP   && o2.getDirection() == ElevatorState.MOVING_DOWN) return -1;
+			if (o1.getDirection() == ElevatorState.FLOORING    && o2.getDirection() == ElevatorState.MOVING_DOWN
+					&& o1.getFloor() + o2.getFloor() - 2*controller.getCurrentFloor() > 0)	return -1;
+			final int diffO1 = o1.getFloor() - controller.getCurrentFloor();
+			final int diffO2 = o2.getFloor() - controller.getCurrentFloor();
+			if (diffO1 >= 0 && diffO2 >= 0) return o1.getFloor() - o2.getFloor();
+			if (diffO1 <  0 && diffO2 <  0) return o2.getFloor() - o1.getFloor();
+			return (diffO1 >= 0) ? -1 : 1;
+		}
+	}

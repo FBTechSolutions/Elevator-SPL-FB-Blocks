@@ -1,0 +1,17 @@
+//sF0003
+	private void triggerOnRequest(Request request) {
+		for (ITickListener listener : this.tickListener) {
+			listener.onRequestFinished(elevator, request);
+		}
+	}
+
+	@Override
+	public void trigger(Request req) {
+		synchronized (calc) {
+			q.offer(req);
+		}
+	}
+	
+	public int getCurrentFloor() {
+		return elevator.getCurrentFloor();
+	}

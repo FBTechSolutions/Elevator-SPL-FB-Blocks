@@ -1,0 +1,10 @@
+										{
+	
+	private static final long serialVersionUID = 4452235677942989047L;
+
+	private final static ImageIcon img_open  = new ImageIcon(FloorComposite.class.getResource("/floor_open.png"));
+	private final static ImageIcon img_close = new ImageIcon(FloorComposite.class.getResource("/floor_close.png"));
+
+	private final JLabel lblFloorImage;
+	private boolean showsOpen = false;
+	private JLabel lblLevel;

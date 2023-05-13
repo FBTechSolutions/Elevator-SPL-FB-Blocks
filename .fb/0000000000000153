@@ -1,0 +1,2 @@
+//sF0008
+	private JToggleButton btnFloorUp, btnFloorDown;

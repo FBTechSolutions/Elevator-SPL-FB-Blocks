@@ -1,0 +1,12 @@
+			break;
+		}
+		this.clearPresent();
+		this.listFloorComposites.get(currentFloor).showElevatorIsPresent();
+	}
+
+	private void clearPresent() {
+		for (FloorComposite fl : listFloorComposites) {
+			fl.showElevatorNotPresent();
+		}
+	}
+	

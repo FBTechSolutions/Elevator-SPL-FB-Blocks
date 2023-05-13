@@ -1,0 +1,11 @@
+		
+		Thread thread = new Thread(controller);
+		thread.start();
+		try {
+			thread.join();
+		} catch (InterruptedException e) {
+		}
+		assertEquals(expectedResult.poll(), listener.wrongResult);
+	}
+
+}

@@ -1,0 +1,12 @@
+//sF0018
+	public void setDisabledFloors(List<Integer> disabledFloors) {
+		this.controller.setDisabledFloors(disabledFloors);
+	}
+	
+	public List<Integer> getDisabledFloors() {
+		return this.controller.getDisabledFloors();
+	}
+	
+	public boolean isDisabledFloor(int level) {
+		return this.controller.isDisabledFloor(level);
+	}

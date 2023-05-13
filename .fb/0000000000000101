@@ -1,0 +1,8 @@
+//sF0006
+	public void toggleService() {
+		controller.setService(!controller.isInService());
+	}
+		
+	public boolean isInService() {
+		return controller.isInService();
+	}

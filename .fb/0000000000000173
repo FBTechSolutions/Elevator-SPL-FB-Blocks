@@ -1,0 +1,11 @@
+//sF0003F0008
+		switch (request.getDirection()) {
+		case MOVING_UP:
+			listFloorComposites.get(request.getFloor()).resetUp();
+			break;
+		case MOVING_DOWN:
+			listFloorComposites.get(request.getFloor()).resetDown();
+			break;
+		default:
+			break;
+		}

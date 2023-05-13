@@ -1,0 +1,41 @@
+//nsF0015
+			JToggleButton btnFloor = new JToggleButton(String.valueOf(i));
+			btnFloor.setActionCommand(String.valueOf(i));
+			btnFloor.addActionListener(new SelectFloorActionListener());
+			panelFloors.add(btnFloor);
+		}
+		add(panelFloors);
+		
+		JButton submit = new JButton("Submit");
+		submit.addActionListener(new SubmitFloorActionListener());
+		add(submit);
+		
+		setVisible(true);
+	}
+
+	public List<Integer> getSelectedFloors() {
+		return selectedFloors ;
+	}
+
+	public class SubmitFloorActionListener implements ActionListener {
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			for (Component component : panelFloors.getComponents()) {
+				JToggleButton btn = ((JToggleButton)component);
+				if (btn.isSelected())
+					selectedFloors.add(Integer.parseInt(btn.getActionCommand()));
+			}
+			setVisible(false);
+		}
+	}
+	
+	private static class SelectFloorActionListener implements ActionListener {
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			JToggleButton button = (JToggleButton) e.getSource();
+			button.setEnabled(false);
+		}
+	}
+
+}
+// #endif

@@ -1,0 +1,12 @@
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		ControlUnit.TIME_DELAY = 0;
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+	
+	private Queue<String> expectedResult = new LinkedList<>(Arrays.asList(

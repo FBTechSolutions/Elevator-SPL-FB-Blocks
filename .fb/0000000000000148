@@ -1,0 +1,21 @@
+													) {
+		setAlignmentY(Component.BOTTOM_ALIGNMENT);
+		setMinimumSize(new Dimension(10, 100));
+		setMaximumSize(new Dimension(400, 100));
+		setBorder(new EmptyBorder(0, 0, 0, 0));
+		this.showsOpen = showsOpen;
+
+		setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
+		lblLevel = new JLabel(Integer.toString(level));
+		lblLevel.setPreferredSize(new Dimension(30, 15));
+		lblLevel.setMinimumSize(new Dimension(30, 15));
+		lblLevel.setMaximumSize(new Dimension(30, 15));
+		lblLevel.setHorizontalTextPosition(SwingConstants.LEFT);
+		lblLevel.setHorizontalAlignment(SwingConstants.LEFT);
+		add(lblLevel);
+		lblLevel.setForeground(Color.BLACK);
+		lblLevel.setBorder(new EmptyBorder(0, 0, 0, 0));
+
+		lblFloorImage = new JLabel();
+		add(lblFloorImage);
+		lblFloorImage.setIcon(showsOpen ? img_open : img_close);

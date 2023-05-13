@@ -1,0 +1,7 @@
+		
+		Thread controllerThread = new Thread(controller);
+		controller.addTickListener(new ITickListener() {
+			public void onTick(Elevator elevator) {
+				System.out.printf(String.format("%s - %s -- Current Floor %d Next Floor %d \n", new SimpleDateFormat("HH:mm:ss").format(new Date()),
+						elevator.getCurrentState(), elevator.getCurrentFloor(), Integer.MAX_VALUE));
+			}

@@ -1,0 +1,5 @@
+//nsF0011
+		if (!btnFloorRequest.isEnabled()) {
+			btnFloorRequest.setSelected(false);
+			btnFloorRequest.setEnabled(true);
+		}

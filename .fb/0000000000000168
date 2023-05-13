@@ -1,0 +1,3 @@
+//nsF0004
+		listInnerElevatorControls.get(Integer.valueOf(e.getActionCommand())).setEnabled(false);
+	}

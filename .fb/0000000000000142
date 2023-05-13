@@ -1,0 +1,7 @@
+//nsF0006
+		if (!isMaxLevel) {
+			add(Box.createRigidArea(new Dimension(5, 0)));
+			btnFloorUp = new JToggleButton();
+			btnFloorUp.setIcon(new ImageIcon(FloorComposite.class.getResource("/arrow_up_small.png")));
+			btnFloorUp.setActionCommand("UP");
+			btnFloorUp.addActionListener(this);

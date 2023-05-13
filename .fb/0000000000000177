@@ -1,0 +1,30 @@
+			layout.setConstraints(floor, gbc);
+			gbc.gridy += 1;
+
+			panel_building.add(floor);
+			listFloorComposites.add(0, floor);
+		}
+		
+		splitPane.setLeftComponent(scrollPane);
+	}
+	
+	public void setEventLabel(String text, Color color) {
+		if (lblEvent != null) {
+			lblEvent.setText(text);
+			lblEvent.setForeground(color);
+		}
+	}
+
+	public void onTick(Elevator elevator) {
+		ElevatorState state = elevator.getCurrentState();
+		int currentFloor = elevator.getCurrentFloor();
+		
+		switch (state) {
+		case MOVING_UP:
+			this.listFloorComposites.get(currentFloor - 1).showImageClose();
+			break;
+		case MOVING_DOWN:
+			this.listFloorComposites.get(currentFloor + 1).showImageClose();
+			break;
+		case FLOORING:
+			this.listFloorComposites.get(currentFloor).showImageOpen();

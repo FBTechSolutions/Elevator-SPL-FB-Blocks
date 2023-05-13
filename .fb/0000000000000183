@@ -1,0 +1,2 @@
+//sF0003F0018
+			btnFloor.setEnabled(sim.isDisabledFloor(i));

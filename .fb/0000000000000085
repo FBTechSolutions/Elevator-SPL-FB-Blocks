@@ -1,0 +1,11 @@
+//nsF0024
+	private ElevatorState direction;
+	
+	public Request(int floor, ElevatorState direction) {
+		this.floor = floor;
+		this.direction = direction;
+	}
+	
+	public ElevatorState getDirection() {
+		return direction;
+	}

@@ -1,0 +1,6 @@
+//sF0003
+			JToggleButton btnFloor = listInnerElevatorControls.get(currentFloor);
+			if (btnFloor.isSelected()) {
+				btnFloor.setSelected(false);
+				btnFloor.setEnabled(true);
+			}

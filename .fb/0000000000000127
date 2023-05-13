@@ -1,0 +1,14 @@
+//nsF0010
+	public void resetUp() {
+		if (btnFloorUp != null && !btnFloorUp.isEnabled()) {
+			btnFloorUp.setSelected(false);
+			btnFloorUp.setEnabled(true);
+		}
+	}
+
+	public void resetDown() {
+		if (btnFloorDown != null && !btnFloorDown.isEnabled()) {
+			btnFloorDown.setSelected(false);
+			btnFloorDown.setEnabled(true);
+		}
+	}

@@ -1,0 +1,6 @@
+//nsF0012
+		add(Box.createRigidArea(new Dimension(5, 0)));
+		btnFloorRequest = new JToggleButton();
+		btnFloorRequest.setIcon(new ImageIcon(FloorComposite.class.getResource("/circle_small.png")));
+		btnFloorRequest.setActionCommand(String.valueOf(level));
+		btnFloorRequest.addActionListener(this);

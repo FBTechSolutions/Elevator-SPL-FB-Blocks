@@ -1,0 +1,16 @@
+				// Get next state of the elevator			
+				state = calculateNextState();
+				elevator.setCurrentState(state);
+				switch (state) {
+				case MOVING_UP:
+					elevator.setDirection(ElevatorState.MOVING_UP);
+					elevator.setCurrentFloor(elevator.getCurrentFloor() + 1);
+					break;
+				case MOVING_DOWN:
+					elevator.setDirection(ElevatorState.MOVING_DOWN);
+					elevator.setCurrentFloor(elevator.getCurrentFloor() - 1);
+					break;
+				case FLOORING:
+					this.triggerOnTick();
+					break;
+				}

@@ -1,0 +1,10 @@
+
+	public void initialize(int maxFloors) {
+		if (frmElevatorSample != null) {
+			return;
+		}
+		frmElevatorSample = new JFrame();
+		frmElevatorSample.setTitle("Elevator Sample");
+		frmElevatorSample.setBounds(100, 50, 900, 650); // window position and size
+		frmElevatorSample.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+

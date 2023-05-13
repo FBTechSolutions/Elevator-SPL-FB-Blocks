@@ -1,0 +1,6 @@
+		sim.start(5);
+	}
+	
+	public void start(int maxFloor) {
+		Elevator elevator = new Elevator(maxFloor);
+		controller = new ControlUnit(elevator);
