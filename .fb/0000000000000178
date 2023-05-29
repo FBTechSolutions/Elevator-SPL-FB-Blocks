@@ -1,0 +1,2 @@
+//nsF0003
+			FloorComposite floor = new FloorComposite(i == 0, i);

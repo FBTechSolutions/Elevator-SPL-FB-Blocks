@@ -1,0 +1,5 @@
+											{
+	private JFrame frmElevatorSample;
+	private JSplitPane splitPane;
+	private JLabel lblEvent;
+	private List<FloorComposite> listFloorComposites = new ArrayList<>();

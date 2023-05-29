@@ -1,0 +1,22 @@
+			
+			// Moving or Waiting
+			try {
+				Thread.sleep(TIME_DELAY);
+			} catch (InterruptedException e) {
+			}
+			
+			switch (state) {
+			case MOVING_UP:
+				this.triggerOnTick();
+				break;
+			case MOVING_DOWN:
+				this.triggerOnTick();
+				break;
+			default:
+				break;
+			}
+		}
+	}
+
+	private ElevatorState calculateNextState() {
+		final int currentFloor = elevator.getCurrentFloor();

@@ -1,0 +1,16 @@
+//nsF0004
+		if (simulation.getCurrentFloor() != level) {
+			String actionCmd = e.getActionCommand();
+			if ("UP".equals(actionCmd)) {
+				simulation.floorRequest(new Request(level, ElevatorState.MOVING_UP));
+				btnFloorUp.setEnabled(false);
+				btnFloorUp.setSelected(true);
+			} else {
+				simulation.floorRequest(new Request(level, ElevatorState.MOVING_DOWN));
+				btnFloorDown.setEnabled(false);
+				btnFloorDown.setSelected(true);
+			}
+		} else {
+			if (btnFloorDown != null) btnFloorDown.setSelected(false);
+			if (btnFloorUp != null) btnFloorUp.setSelected(false);
+		}

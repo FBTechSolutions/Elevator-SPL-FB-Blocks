@@ -1,0 +1,10 @@
+//sF0003
+	/**
+	 * The simulation unit is a bridge between gui and control unit.
+	 * So there is a need to delegate requests made by the gui to the control unit.
+	 * Thats why the simulationunit is also capable of informing trigger listener.
+	 * @param listener - The trigger listener.
+	 */
+	public void setTriggerListener(ITriggerListener listener) {
+		this.triggerListener = listener;
+	}

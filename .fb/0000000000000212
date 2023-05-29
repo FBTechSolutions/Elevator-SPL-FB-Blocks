@@ -1,0 +1,9 @@
+	));
+
+	@Test
+	public void test() {
+		final ControlUnit controller = new ControlUnit(new Elevator(3));
+		
+		final TestListener listener = new TestListener(controller);
+		controller.addTickListener(listener);
+

@@ -1,0 +1,16 @@
+//nsF0027
+
+import java.util.Comparator;
+
+public class Request {
+
+	private int floor;
+	
+	public int getFloor() {
+		return floor;
+	}
+
+	public Request(int floor) {
+		this.floor = floor;
+	}
+	

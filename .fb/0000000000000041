@@ -1,0 +1,17 @@
+//sF0008
+	private void sortQueue() {
+		final ElevatorState direction = elevator.getCurrentState();
+		final PriorityBlockingQueue<Request> pQueue;
+		switch (direction) {
+		case MOVING_DOWN:
+			pQueue = new PriorityBlockingQueue<>(Math.max(1, q.size()), downComparator);
+			break;
+		case MOVING_UP:
+			pQueue = new PriorityBlockingQueue<>(Math.max(1, q.size()), comparator);
+			break;
+		default:
+			return;
+		}
+		q.drainTo(pQueue);
+		q = pQueue;
+	}

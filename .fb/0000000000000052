@@ -1,0 +1,8 @@
+	
+	public ControlUnit(Elevator elevator) {
+		this.elevator = elevator;
+	}
+
+	public void run() {
+		while (run) {
+			final ElevatorState state;

@@ -1,0 +1,13 @@
+
+	private List<ITickListener> tickListener = new ArrayList<>();
+
+	public void addTickListener(ITickListener ticker) {
+		this.tickListener.add(ticker);
+	}
+
+	private void triggerOnTick() {
+		for (ITickListener listener : this.tickListener) {
+			listener.onTick(elevator);
+		}
+	}
+

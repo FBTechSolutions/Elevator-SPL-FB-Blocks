@@ -1,0 +1,12 @@
+//sF0018
+	public void setDisabledFloors(List<Integer> disabledFloors) {
+		elevator.setDisabledFloors(disabledFloors);
+	}
+	
+	public List<Integer> getDisabledFloors() {
+		return elevator.getDisabledFloors();
+	}
+	
+	public boolean isDisabledFloor(int level) {
+		return !elevator.getDisabledFloors().contains(level);
+	}

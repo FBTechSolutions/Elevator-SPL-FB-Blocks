@@ -1,0 +1,4 @@
+//nsF0022
+			int diff0 = Math.abs(o1.floor - controller.getCurrentFloor());
+			int diff1 = Math.abs(o2.floor - controller.getCurrentFloor());
+			return diff0 - diff1;

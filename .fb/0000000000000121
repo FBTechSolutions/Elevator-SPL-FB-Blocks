@@ -1,0 +1,24 @@
+//nsF0015
+package de.ovgu.featureide.examples.elevator.ui;
+
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JToggleButton;
+import javax.swing.SwingConstants;
+import java.awt.Component;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
+
+public class FloorChooseDialog extends JDialog {
+
+	private static final long serialVersionUID = 5663011468166401169L;
+	private JPanel panelFloors;
+	private List<Integer> selectedFloors = new ArrayList<>();
+	
+	public FloorChooseDialog(int maxFloors, 

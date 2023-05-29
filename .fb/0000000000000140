@@ -1,0 +1,10 @@
+//nsF0006
+			add(btnFloorUp);
+		}
+		
+		if (level != 0) {
+			add(Box.createRigidArea(new Dimension(5, 0)));
+			btnFloorDown = new JToggleButton();
+			btnFloorDown.setIcon(new ImageIcon(FloorComposite.class.getResource("/arrow_down_small.png")));
+			btnFloorDown.setActionCommand("DOWN");
+			btnFloorDown.addActionListener(this);

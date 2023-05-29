@@ -1,0 +1,2 @@
+//nsF0018
+	private PriorityBlockingQueue<Request> q = new PriorityBlockingQueue<>(1, comparator);

@@ -1,0 +1,17 @@
+//nsF0015
+			String description) {
+		
+		setModal(true);
+		setTitle("Choose Floor");
+		setSize(220, 220);
+		setLayout(new FlowLayout());
+		
+		JPanel panelLevel = new JPanel(new FlowLayout());
+		JLabel lblLevel = new JLabel(description);
+		lblLevel.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblLevel.setHorizontalAlignment(SwingConstants.CENTER);
+		panelLevel.add(lblLevel);
+		add(panelLevel);
+		
+		panelFloors = new JPanel(new GridLayout(0,3));
+		for (int i = 0; i <= maxFloors; i++) {

@@ -1,0 +1,19 @@
+//sF0003
+	private ElevatorState getElevatorState(int currentFloor) {
+		if (!q.isEmpty()) {
+			Request poll = q.peek();
+			int floor = poll.getFloor();
+			if (floor == currentFloor) {
+				do {
+					triggerOnRequest(q.poll());
+					poll = q.peek();
+				} while (poll != null && poll.getFloor() == currentFloor);
+				return ElevatorState.FLOORING;
+			} else if (floor > currentFloor) {
+				return ElevatorState.MOVING_UP;
+			} else {
+				return ElevatorState.MOVING_DOWN;
+			}
+		}
+		return ElevatorState.FLOORING;
+	}

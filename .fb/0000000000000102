@@ -1,0 +1,11 @@
+	/**
+	 * Send a floor request to the trigger listener.
+	 * @param floorRequest -  The floor request to send to the trigger listener.
+	 */
+	public void floorRequest(Request floorRequest) {
+		this.triggerListener.trigger(floorRequest);		
+	}
+	
+	public int getCurrentFloor() {
+		return controller.getCurrentFloor();
+	}

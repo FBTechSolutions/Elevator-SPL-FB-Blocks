@@ -1,0 +1,8 @@
+//sF0006
+	public void setService(boolean modus) {
+		elevator.setService(modus);
+	}
+		
+	public boolean isInService() {
+		return elevator.isInService();
+	}

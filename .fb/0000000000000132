@@ -1,0 +1,7 @@
+//nsF0004
+		if (btnFloorUp != null && !btnFloorUp.isEnabled() && btnFloorUp.isSelected()) {
+			return true;
+		}
+		if (btnFloorDown != null && !btnFloorDown.isEnabled() && btnFloorDown.isSelected()) {
+			return true;
+		}

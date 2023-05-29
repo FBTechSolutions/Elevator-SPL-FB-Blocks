@@ -1,0 +1,36 @@
+	}
+
+	private void toggleElevatorPresent(boolean isOpen) {
+		Color color = isOpen ? cElevatorIsPresent : null;
+		this.setBackground(color);
+	}
+
+	public void showElevatorIsPresent() {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				toggleElevatorPresent(true);
+			}
+		});
+	}
+
+	public void showElevatorNotPresent() {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				toggleElevatorPresent(false);
+			}
+		});
+	}
+
+	public void showImageClose() {
+		if (this.showsOpen)	
+			this.changeImage();
+	}
+
+	public void showImageOpen() {
+		if (!this.showsOpen)	
+			this.changeImage();
+	}
+
+	private void changeImage() {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {

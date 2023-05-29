@@ -1,0 +1,14 @@
+//sF0012
+		switch (elevator.getCurrentState()) {
+		case FLOORING:
+			switch (elevator.getDirection()) {
+			case MOVING_DOWN:
+				return (currentFloor <= elevator.getMinFloor()) ? ElevatorState.MOVING_UP : ElevatorState.MOVING_DOWN;
+			case MOVING_UP:
+				return (currentFloor >= elevator.getMaxFloor()) ? ElevatorState.MOVING_DOWN : ElevatorState.MOVING_UP;
+			default:
+				return ElevatorState.MOVING_UP;
+			}
+	default:
+			return ElevatorState.FLOORING;
+		}

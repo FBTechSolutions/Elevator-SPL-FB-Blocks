@@ -1,0 +1,7 @@
+//sF0003
+		controller.trigger(new Request(3));
+		try {
+			Thread.sleep(1);
+		} catch (InterruptedException e1) {
+		}
+		controller.trigger(new Request(2));

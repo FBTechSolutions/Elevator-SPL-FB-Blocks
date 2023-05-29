@@ -1,0 +1,13 @@
+				if (showsOpen) {
+					lblFloorImage.setIcon(img_close);
+					showsOpen = false;
+					toggleElevatorPresent(false);
+				} else {
+					lblFloorImage.setIcon(img_open);
+					showsOpen = true;
+					toggleElevatorPresent(true);
+				}
+			}
+		});
+	}
+	
