@@ -1,4 +1,4 @@
-//nsF0015
+
 			JToggleButton btnFloor = new JToggleButton(String.valueOf(i));
 			btnFloor.setActionCommand(String.valueOf(i));
 			btnFloor.addActionListener(new SelectFloorActionListener());
@@ -38,4 +38,3 @@
 	}
 
 }
-// #endif

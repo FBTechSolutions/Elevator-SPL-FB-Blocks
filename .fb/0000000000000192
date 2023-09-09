@@ -1,4 +1,4 @@
-//sF0003F0006F0018
+
 	private SimulationUnit sim;
 
 	public MainWindow(SimulationUnit sim) {

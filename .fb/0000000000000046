@@ -1,4 +1,4 @@
-//sF0006
+		
 		if (isInService()) {
 			if (currentFloor != elevator.getMinFloor()) {
 				return ElevatorState.MOVING_DOWN;

@@ -1,6 +1,0 @@
-//nsF0007
-		JToggleButton btnService = new JToggleButton("Service");
-		btnService.setMinimumSize(new Dimension(80, 30));
-		btnService.setPreferredSize(new Dimension(80, 30));
-		btnService.setMaximumSize(new Dimension(80, 30));
-		GridBagConstraints gbc_btnService = new GridBagConstraints();

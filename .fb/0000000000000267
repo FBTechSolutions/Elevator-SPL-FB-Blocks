@@ -1,0 +1,8 @@
+			default:
+				break;
+			}
+		}
+	}
+	
+	private ElevatorState calculateNextState() {
+		final int currentFloor = elevator.getCurrentFloor();

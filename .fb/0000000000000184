@@ -1,4 +1,4 @@
-//nsF0006
+
 		JPanel panel_floors = new JPanel(new GridLayout(0,3));
 		panel_floors.setBackground(Color.GRAY);
 		
@@ -7,3 +7,4 @@
 			btnFloor = new JToggleButton(String.valueOf(i));
 			btnFloor.setActionCommand(String.valueOf(i));
 			btnFloor.addActionListener(this);
+			

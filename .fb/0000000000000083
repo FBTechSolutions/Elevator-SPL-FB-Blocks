@@ -1,2 +1,2 @@
-//nsF0024
+
 		result = prime * result + direction.hashCode();

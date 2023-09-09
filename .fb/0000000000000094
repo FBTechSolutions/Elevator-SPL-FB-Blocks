@@ -1,6 +1,6 @@
 	
 	public Elevator(int maxFloor) { this.maxFloor = maxFloor; }
 	
-	public int getMaxFloor() { return maxFloor;	}
+	public int getMaxFloor() { return maxFloor; }
 	public int getMinFloor() { return minFloor; }
 	

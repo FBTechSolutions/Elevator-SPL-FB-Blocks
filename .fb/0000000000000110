@@ -1,2 +1,2 @@
-//nsF0020
+
 		simulationWindow = new MainWindow(sim);

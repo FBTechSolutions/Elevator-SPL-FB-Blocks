@@ -1,4 +1,5 @@
-											{
+{
+	
 	private JFrame frmElevatorSample;
 	private JSplitPane splitPane;
 	private JLabel lblEvent;

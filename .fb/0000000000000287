@@ -1,0 +1,4 @@
+
+		lblEvent = new JLabel("Welcome Enterprise User");
+		lblEvent.setFont(new Font("Tahoma", Font.BOLD, 15));
+		

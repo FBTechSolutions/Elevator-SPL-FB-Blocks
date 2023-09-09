@@ -1,4 +1,5 @@
-													) {
+) {
+		
 		setAlignmentY(Component.BOTTOM_ALIGNMENT);
 		setMinimumSize(new Dimension(10, 100));
 		setMaximumSize(new Dimension(400, 100));

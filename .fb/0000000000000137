@@ -1,4 +1,4 @@
-	}
+}
 
 	private void toggleElevatorPresent(boolean isOpen) {
 		Color color = isOpen ? cElevatorIsPresent : null;

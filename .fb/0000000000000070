@@ -1,2 +1,2 @@
-//nsF0024
+
 		return "Request [floor=" + floor + ", direction=" + direction + "]";

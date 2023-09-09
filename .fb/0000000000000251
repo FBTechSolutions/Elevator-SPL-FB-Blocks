@@ -1,0 +1,7 @@
+
+		JToggleButton btnStop = new JToggleButton("Stop");
+		btnStop.setMinimumSize(new Dimension(120, 30));
+		btnStop.setPreferredSize(new Dimension(120, 30));
+		btnStop.setMaximumSize(new Dimension(120, 30));
+		GridBagConstraints gbc_btnStop = new GridBagConstraints();
+		

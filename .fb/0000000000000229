@@ -1,0 +1,8 @@
+
+	public boolean isInStopMode() {
+		return inStopMode;
+	}
+	public void setInStopMode(boolean inStopMode) {
+		this.inStopMode = inStopMode;
+	}
+	

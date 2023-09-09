@@ -1,0 +1,9 @@
+ // de 189
+		lblEvent.setHorizontalAlignment(SwingConstants.CENTER);
+		GridBagConstraints gbc_lbl = new GridBagConstraints();
+		gbc_lbl.gridwidth = 4;
+		gbc_lbl.insets = new Insets(0, 0, 185, 0);
+		gbc_lbl.fill = GridBagConstraints.HORIZONTAL;
+		gbc_lbl.gridx = 0;
+		gbc_lbl.gridy = 0;
+		panel_control.add(lblEvent, gbc_lbl);

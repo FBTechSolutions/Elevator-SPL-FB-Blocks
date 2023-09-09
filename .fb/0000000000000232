@@ -1,0 +1,9 @@
+
+	public void toggleStopMode() {
+		controller.setStopMode(!controller.isInStopMode());
+	}
+
+	public boolean isStopMode() {
+		return controller.isInStopMode();
+	}
+	

@@ -1,4 +1,4 @@
-//nsF0024
+
 	public static class DownComparator extends RequestComparator {
 		
 		public DownComparator(ControlUnit controller) {

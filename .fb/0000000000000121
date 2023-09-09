@@ -1,4 +1,4 @@
-//nsF0015
+
 package de.ovgu.featureide.examples.elevator.ui;
 
 import javax.swing.JButton;

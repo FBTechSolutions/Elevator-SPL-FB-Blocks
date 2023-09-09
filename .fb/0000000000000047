@@ -12,11 +12,4 @@
 			case MOVING_DOWN:
 				this.triggerOnTick();
 				break;
-			default:
-				break;
-			}
-		}
-	}
-
-	private ElevatorState calculateNextState() {
-		final int currentFloor = elevator.getCurrentFloor();
+				

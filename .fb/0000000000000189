@@ -29,14 +29,3 @@
 		GridBagLayout gbl_panel_control = new GridBagLayout();
 		panel_control.setLayout(gbl_panel_control);
 		
-		lblEvent = new JLabel("");
-		lblEvent.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblEvent.setForeground(Color.WHITE);
-		lblEvent.setHorizontalAlignment(SwingConstants.CENTER);
-		GridBagConstraints gbc_lbl = new GridBagConstraints();
-		gbc_lbl.gridwidth = 4;
-		gbc_lbl.insets = new Insets(0, 0, 185, 0);
-		gbc_lbl.fill = GridBagConstraints.HORIZONTAL;
-		gbc_lbl.gridx = 0;
-		gbc_lbl.gridy = 0;
-		panel_control.add(lblEvent, gbc_lbl);

@@ -1,4 +1,4 @@
-//sF0003F0008
+
 		switch (request.getDirection()) {
 		case MOVING_UP:
 			listFloorComposites.get(request.getFloor()).resetUp();

@@ -1,4 +1,5 @@
 	
 	private Color cElevatorIsPresent = UIManager.getDefaults().getColor("Button.select");
 
-	public FloorComposite(boolean showsOpen, int level
+	public FloorComposite(boolean showsOpen,
+			      int level

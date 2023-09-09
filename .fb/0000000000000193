@@ -1,2 +1,2 @@
-//sF0003
+
 	private List<JToggleButton> listInnerElevatorControls = new ArrayList<>();

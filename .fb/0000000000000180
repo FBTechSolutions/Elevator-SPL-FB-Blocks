@@ -1,2 +1,2 @@
-//nsF0019
+
 			FloorComposite floor = new FloorComposite(i == 0, i, sim, i == maxFloors);

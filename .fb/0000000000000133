@@ -1,4 +1,4 @@
-//nsF0011
+
 		if (!btnFloorRequest.isEnabled() && btnFloorRequest.isSelected()) {
 			return true;
 		}

@@ -1,0 +1,12 @@
+//from 047
+			case MOVING_STOP:
+				this.triggerOnTick();
+				break;
+			default:
+				break;
+			}
+		}
+	}
+
+	private ElevatorState calculateNextState() {
+		final int currentFloor = elevator.getCurrentFloor();

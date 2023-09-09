@@ -1,5 +1,5 @@
-//nsF0025
-	private long timestamp = System.currentTimeMillis(); // remove "-"?
+
+	private long timestamp = System.currentTimeMillis();
 
 	public long getTimestamp() {
 		return timestamp;

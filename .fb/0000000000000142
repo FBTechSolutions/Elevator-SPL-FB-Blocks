@@ -1,4 +1,4 @@
-//nsF0006
+
 		if (!isMaxLevel) {
 			add(Box.createRigidArea(new Dimension(5, 0)));
 			btnFloorUp = new JToggleButton();

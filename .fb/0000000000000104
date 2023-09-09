@@ -1,4 +1,6 @@
+
 		});
+		
 		controller.addTickListener(simulationWindow);
 		
 		simulationWindow.initialize(elevator.getMaxFloor());

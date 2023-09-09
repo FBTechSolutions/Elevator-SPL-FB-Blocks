@@ -1,4 +1,4 @@
-//nsF0026
+
 		protected ControlUnit controller;
 
 		public RequestComparator(ControlUnit controller) {

@@ -1,4 +1,4 @@
-//sF0003
+	
 	private ElevatorState getElevatorState(int currentFloor) {
 		if (!q.isEmpty()) {
 			Request poll = q.peek();

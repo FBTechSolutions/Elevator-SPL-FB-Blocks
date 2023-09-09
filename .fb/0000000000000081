@@ -1,2 +1,2 @@
-//nsF0024
+
 		return floor == other.floor && direction == other.direction;

@@ -1,0 +1,4 @@
+		
+		if (isInStopMode()) {
+			return ElevatorState.MOVING_STOP;
+		}

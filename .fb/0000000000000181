@@ -1,4 +1,5 @@
-	 }
+
+	}
 
 	private void addBuilding(int maxFloors) {
 		JPanel panel_building = new JPanel();

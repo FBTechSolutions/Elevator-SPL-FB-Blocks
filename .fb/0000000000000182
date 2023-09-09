@@ -1,13 +1,7 @@
-//nsF0006
+
 			panel_floors.add(btnFloor);
 			listInnerElevatorControls.add(0, btnFloor);
 		}
 			
 		GridBagConstraints gbc_btnFloor = new GridBagConstraints();
-		gbc_btnFloor.insets = new Insets(0, 0, 0, 0);
-		gbc_btnFloor.fill = GridBagConstraints.BOTH;
-		gbc_btnFloor.gridwidth = 4;
-		gbc_btnFloor.gridx = 2;
-		gbc_btnFloor.gridy = 4;
-			
-		panel_control.add(panel_floors, gbc_btnFloor);
+		

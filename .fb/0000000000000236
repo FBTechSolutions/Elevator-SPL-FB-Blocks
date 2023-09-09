@@ -1,0 +1,3 @@
+ //Enterprise
+		lblEvent.setForeground(Color.BLUE);
+		

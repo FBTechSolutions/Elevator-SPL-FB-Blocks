@@ -1,2 +1,2 @@
-//sF0003
+
 		return getElevatorState(currentFloor);

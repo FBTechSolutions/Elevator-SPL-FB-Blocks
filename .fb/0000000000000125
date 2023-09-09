@@ -1,4 +1,4 @@
-//nsF0011
+
 		if (simulation.getCurrentFloor() != level) {
 			simulation.floorRequest(new Request(level));
 			btnFloorRequest.setEnabled(false);

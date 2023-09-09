@@ -1,0 +1,18 @@
+
+		gbc_btnStop.fill = GridBagConstraints.VERTICAL;
+		gbc_btnStop.gridx = 2;
+		gbc_btnStop.gridy = 1;
+		gbc_btnStop.gridwidth = 2;
+		panel_control.add(btnStop, gbc_btnStop);
+		btnStop.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				sim.toggleStopMode();
+				if (sim.isStopMode()) {
+				setEventLabel("Stop-Mode!", Color.ORANGE);
+				} else {
+				setEventLabel("...", Color.BLUE);
+				}
+			}
+		});
+		

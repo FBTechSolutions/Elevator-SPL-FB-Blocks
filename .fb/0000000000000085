@@ -1,4 +1,4 @@
-//nsF0024
+
 	private ElevatorState direction;
 	
 	public Request(int floor, ElevatorState direction) {

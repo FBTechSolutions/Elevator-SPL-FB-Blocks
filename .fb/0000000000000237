@@ -1,0 +1,4 @@
+ // de 189
+		lblEvent.setFont(new Font("Tahoma", Font.BOLD, 15));
+		lblEvent.setForeground(Color.WHITE);
+		

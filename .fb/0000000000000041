@@ -1,4 +1,4 @@
-//sF0008
+
 	private void sortQueue() {
 		final ElevatorState direction = elevator.getCurrentState();
 		final PriorityBlockingQueue<Request> pQueue;

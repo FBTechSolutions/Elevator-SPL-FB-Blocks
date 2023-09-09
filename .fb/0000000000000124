@@ -1,4 +1,4 @@
-//nsF0004
+
 		if (simulation.getCurrentFloor() != level) {
 			String actionCmd = e.getActionCommand();
 			if ("UP".equals(actionCmd)) {

@@ -1,0 +1,8 @@
+
+    	public void setStopMode(boolean b) {
+		elevator.setInStopMode(b);
+	}
+    	public boolean isInStopMode() {
+		return elevator.isInStopMode();
+	}
+	

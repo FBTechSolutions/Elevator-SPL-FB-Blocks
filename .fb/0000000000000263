@@ -1,0 +1,4 @@
+
+		gbc_btnFloor.fill = GridBagConstraints.BOTH;
+		gbc_btnFloor.gridwidth = 4;
+		

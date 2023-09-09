@@ -1,0 +1,4 @@
+			case MOVING_DOWN:
+				this.triggerOnTick();
+				break;
+				

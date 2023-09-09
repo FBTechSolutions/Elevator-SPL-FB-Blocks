@@ -1,4 +1,4 @@
-//sF0018
+
 	public void setDisabledFloors(List<Integer> disabledFloors) {
 		this.controller.setDisabledFloors(disabledFloors);
 	}

@@ -1,4 +1,4 @@
-//sF0018
+
 		FloorChooseDialog permissionDialog = new FloorChooseDialog(maxFloors, Arrays.asList(0), "Choose disabled floors");
 		List<Integer> disabledFloors = permissionDialog.getSelectedFloors();
 		sim.setDisabledFloors(disabledFloors);

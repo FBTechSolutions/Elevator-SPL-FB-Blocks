@@ -1,0 +1,4 @@
+
+		gbc_btnFloor.gridy = 4;
+			
+		panel_control.add(panel_floors, gbc_btnFloor);

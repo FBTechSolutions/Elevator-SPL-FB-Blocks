@@ -1,2 +1,2 @@
-//sF0003
+
 		listFloorComposites.get(request.getFloor()).resetFloorRequest();

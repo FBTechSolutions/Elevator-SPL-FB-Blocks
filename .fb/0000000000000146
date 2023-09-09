@@ -1,4 +1,4 @@
-//nsF0017
+
 		this.level = level;
 		this.simulation = simulation;
 
