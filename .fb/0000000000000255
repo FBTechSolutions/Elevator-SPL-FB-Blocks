@@ -1,10 +1,2 @@
 
-		panel_control.add(btnService, gbc_btnService);
-		btnService.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				sim.toggleService();
-				if (sim.isInService()) {
-					setEventLabel("Service-Mode!", Color.ORANGE);
-				} else {
-					
+		
