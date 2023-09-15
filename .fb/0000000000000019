@@ -21,3 +21,4 @@
 package de.ovgu.featureide.examples.elevator.ui;
 
 import de.ovgu.featureide.examples.elevator.core.controller.ITickListener;
+import javax.swing.BorderFactory;

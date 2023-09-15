@@ -1,2 +1,2 @@
 
-	private List<Integer> disabledFloors;
+	private List<Integer> enabledFloors;

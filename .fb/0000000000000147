@@ -1,2 +1,2 @@
 
-		this.isEnabled = simulation.isDisabledFloor(level);
+		this.isEnabled = simulation.isEnabledFloor(level);

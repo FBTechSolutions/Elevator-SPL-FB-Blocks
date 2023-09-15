@@ -1,6 +1,6 @@
 
 			panel_floors.add(btnFloor);
-			listInnerElevatorControls.add(0, btnFloor);
+			listInnerElevatorControls.add(i, btnFloor);
 		}
 			
 		GridBagConstraints gbc_btnFloor = new GridBagConstraints();
